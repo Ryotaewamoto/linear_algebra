@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>simultaneous_equations_example.tex</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
+<head>
+  <title>simultaneous_equations_example.md</title>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  
 <style>
 /* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
 /*---------------------------------------------------------------------------------------------
@@ -354,18 +355,37 @@ code {
 
 </style>
 
-<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-</head>
-<body>
+  <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
   <script>
     mermaid.initialize({
       startOnLoad: true,
       theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
-          ? 'dark'
-          : 'default'
+        ? 'dark'
+        : 'default'
     });
   </script>
-<h1 id="%E9%80%A3%E7%AB%8B%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%81%AE%E4%BE%8B">連立方程式の例</h1>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css"
+    integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js"
+    integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx"
+    crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js"
+    integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe"
+    crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false },
+        ]
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <h1 id="%E9%80%A3%E7%AB%8B%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%81%AE%E4%BE%8B">連立方程式の例</h1>
 <h2 id="%E5%95%8F%E9%A1%8C">問題</h2>
 <p>果物の詰め合わせセットが2種類あります。一つ目の詰め合わせセットにはリンゴが2個とオレンジが8個入っていて560円です。もう一つの詰め合わせセットにはリンゴが5個とオレンジが3個入っていて550円です。リンゴとオレンジの単価はそれぞれいくらでしょうか。</p>
 <h3 id="%E5%A4%89%E6%95%B0%E3%81%A8%E5%88%B6%E7%B4%84%E6%9D%A1%E4%BB%B6">変数と制約条件</h3>
@@ -376,8 +396,8 @@ code {
 </ul>
 <h3 id="%E5%88%B6%E7%B4%84%E6%9D%A1%E4%BB%B6">制約条件</h3>
 <ul>
-<li>$x \in \mathbb{Z} , x \geq 0$ $x$ は整数で負ではない</li>
-<li>$y \in \mathbb{Z} , y \geq 0$ $y$ は整数で負ではない</li>
+<li>$x \in \mathbb{Z} , x \geq 0$ : $x$ は整数で負ではない</li>
+<li>$y \in \mathbb{Z} , y \geq 0$ : $y$ は整数で負ではない</li>
 </ul>
 <h3 id="%E5%AE%9A%E5%BC%8F%E5%8C%96">定式化</h3>
 <p>リンゴが2個とオレンジが8個入って560円</p>
@@ -412,4 +432,5 @@ $$</p>
 <p>任意の $\varepsilon &gt; 0$ についてある $\delta &gt; 0$ が存在して、任意の $x \in \mathbb{R}$ に対して $0 &lt; |x - a| &lt; \delta$ ならば $|f(x) - f(a)| &lt; \varepsilon$ を満たすとき $f(x)$ は $a$ で連続であるという。</p>
 
 </body>
+
 </html>

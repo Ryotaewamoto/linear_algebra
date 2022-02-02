@@ -10,8 +10,8 @@
 - $y$ : オレンジの単価（円）
 
 ### 制約条件
-- $x \in \mathbb{Z} , x \geq 0$ $x$ は整数で負ではない
-- $y \in \mathbb{Z} , y \geq 0$ $y$ は整数で負ではない
+- $x \in \mathbb{Z} , x \geq 0$ : $x$ は整数で負ではない
+- $y \in \mathbb{Z} , y \geq 0$ : $y$ は整数で負ではない
 
 ### 定式化
 
