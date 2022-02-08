@@ -1,3 +1,6 @@
+\documentclass{jarticle}
+\begin{document}
+
 # 連立方程式の例
 
 ## 問題
@@ -29,8 +32,13 @@ $5x + 3y = 550$
 
 ### 連立方程式
 
+$$\begin{cases} 2x + 8y = 560 \\ 5x + 3y = 550 \end{cases}$$
+
 $$
-\begin{cases} 2x + 8y &= 560 \\ 5x + 3y &= 550 \end{cases}
+\begin{array}{ccc}
+\overline{A}\cap B &=& \emptyset, \\
+A\cap \overline{B} &=& \emptyset,
+\end{array}
 $$
 
 ただし、$x,y \in \mathbb{Z}, x \geq 0, y \geq 0$ 
@@ -56,3 +64,5 @@ $$ e^{i x} = \cos{x} + i \sin{x} $$
 
 ##  $\varepsilon - \delta$ 論法
 任意の $\varepsilon > 0$ についてある $\delta > 0$ が存在して、任意の $x \in \mathbb{R}$ に対して $0 < |x - a| < \delta$ ならば $|f(x) - f(a)| < \varepsilon$ を満たすとき $f(x)$ は $a$ で連続であるという。
+
+\end{document}
